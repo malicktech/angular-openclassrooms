@@ -1,10 +1,13 @@
 # AngularOpenclassrooms
 
-Application de gestion d'appareils électriques 
+cours openclassroom [Développez des applications Web avec Angular](https://openclassrooms.com/fr/courses/4668271-developpez-des-applications-web-avec-angular)
 
-Tuto cours openclassroom [Développez des applications Web avec Angular] (https://openclassrooms.com/fr/courses/4668271-developpez-des-applications-web-avec-angular)
-
+Tuto webapp de gestion d'appareils électriques 
 Mis à jour sur la version 7 Angular
+
+Démo
+    
+    https://diop-malick.github.io/angular-openclassrooms/
 
 Stack 
 
@@ -39,17 +42,18 @@ Partie 3 - Enrichissez votre application
 
 Partie 4 - Interagissez avec un utilisateur et un serveur
 
-- [ ] 1. Écoutez l'utilisateur avec les Forms - méthode template
-- [ ] 2. Écoutez l'utilisateur avec les Forms - méthode réactive
-- [ ] 3. Interagissez avec un serveur avec HttpClient
+- [x] 1. Écoutez l'utilisateur avec les Forms - méthode template
+- [x] 2. Écoutez l'utilisateur avec les Forms - méthode réactive
+- [x] 3. Interagissez avec un serveur avec HttpClient
 - [ ] 4. Créez une application complète avec Angular et Firebase
 
 Custom part 
-- [ ] update code to angular 7.1
+- [ ] update code to angular 7
 - [ ] update boostrap to 4.1
 - [ ] Use Angualr firebase library
 - [ ] add ngx-bootstrap
 - [ ] PWA
+- [ ] Deploy to github page
 
 ## Development server
 

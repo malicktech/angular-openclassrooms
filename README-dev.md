@@ -40,8 +40,21 @@ Model
 
     ng serve
 
-# https://firebase.google.com/
+
+# firebase
+
+https://firebase.google.com/
 
 compte : mdiop.sne@gmail.com
 project : angular openclassrooms tuto
 https://angular-openclassrooms-tuto.firebaseio.com/
+
+# Deploy demo to github page
+
+https://www.npmjs.com/package/angular-cli-ghpages
+
+	npm install -g angular-cli-ghpages
+	 
+	ng build --prod --base-href https://diop-malick.github.io/angular-openclassrooms/
+
+	ngh --dir=dist/angular-openclassrooms –no-silent --message="First deploy" --name="diop-malick" --email=diop-malick@hotmail.fr
