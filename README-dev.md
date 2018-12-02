@@ -10,8 +10,9 @@
 
 - component
 	
-	ng generate component my-first
+	ng generate component appareil
 
+	ng generate service appareil
 
 # Start dev server - localhost:4200
 
