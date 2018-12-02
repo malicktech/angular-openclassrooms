@@ -27,6 +27,15 @@
 
 	ng generate component EditAppareil
 
+Model 
+
+	ng generate class models/User
+
+	ng generate service services/user
+
+	ng generate component UserList
+	ng generate component NewUser
+
 # Start dev server - localhost:4200
 
     ng serve
