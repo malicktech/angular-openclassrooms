@@ -6,11 +6,20 @@ import { AppComponent } from './app.component';
 import { AppareilComponent } from './appareil/appareil.component';
 import { FormsModule } from '@angular/forms';
 import { AppareilService } from './services/appareil.service';
+import { AuthService } from './services/auth.service';
+import { AuthComponent } from './auth/auth.component';
+import { AppareilViewComponent } from './appareil-view/appareil-view.component';
+import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppareilComponent
+    AppareilComponent,
+    AuthComponent,
+    AppareilViewComponent,
+    SingleAppareilComponent,
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +27,8 @@ import { AppareilService } from './services/appareil.service';
     FormsModule
   ],
   providers: [
-    AppareilService
+    AppareilService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
