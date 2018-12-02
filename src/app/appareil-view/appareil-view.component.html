@@ -1,6 +1,7 @@
 <h2>Mes appareils</h2>
 <p>(Pipe) Mis à jour : {{ lastUpdate | async | date: 'short' }}</p>
 <p>(Chaine Pipe) : {{ lastUpdate | async | date: 'y MMMM EEEE d' | uppercase }}</p>
+<div>
 <ul class="list-group">
   <app-appareil  *ngFor="let appareil of appareils; let i = index"
                  [appareilName]="appareil.name"
@@ -8,7 +9,10 @@
                  [index]="i"
                  [id]="appareil.id"></app-appareil>
 </ul>
-<button class="btn btn-success"
+</div>
+<button type="button" class="btn btn-success"
         (click)="onAllumer()">Tout allumer</button>
-<button class="btn btn-danger"
+<button type="button" class="btn btn-danger"
         (click)="onEteindre()">Tout éteindre</button>
+<button type="button" class="btn btn-primary"
+        (click)="onSave()">Enregistrer les appareils</button>

@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { UserService } from './services/user.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,8 @@ import { NewUserComponent } from './new-user/new-user.component';
   ],
   imports: [
     BrowserModule,
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule

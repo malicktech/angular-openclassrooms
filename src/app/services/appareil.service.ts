@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import {FIREBASE_URL} from '../app.constants';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +9,8 @@ import { Subject } from 'rxjs';
 export class AppareilService {
 
   appareilsSubject = new Subject<any[]>();
+
+  public firebaseResourceUrl = FIREBASE_URL;
 
   private appareils = [
     {
@@ -26,7 +30,7 @@ export class AppareilService {
     }
   ];
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   emitAppareilSubject() {
     this.appareilsSubject.next(this.appareils.slice());
@@ -77,6 +81,19 @@ export class AppareilService {
     appareilObject.id = this.appareils[(this.appareils.length - 1)].id + 1;
     this.appareils.push(appareilObject);
     this.emitAppareilSubject();
+  }
+
+  saveAppareilsToServer() {
+    this.httpClient
+      .put(`${this.firebaseResourceUrl}/appareils.json`, this.appareils)
+      .subscribe(
+        () => {
+          console.log('Enregistrement terminé !');
+        },
+        (error) => {
+          console.log('Erreur ! : ' + error);
+        }
+      );
   }
 
 }

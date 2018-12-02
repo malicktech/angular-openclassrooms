@@ -47,6 +47,7 @@ Partie 4 - Interagissez avec un utilisateur et un serveur
 Custom part 
 - [ ] update code to angular 7.1
 - [ ] update boostrap to 4.1
+- [ ] Use Angualr firebase library
 - [ ] add ngx-bootstrap
 - [ ] PWA
 

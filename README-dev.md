@@ -40,3 +40,8 @@ Model
 
     ng serve
 
+# https://firebase.google.com/
+
+compte : mdiop.sne@gmail.com
+project : angular openclassrooms tuto
+https://angular-openclassrooms-tuto.firebaseio.com/
