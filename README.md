@@ -2,6 +2,8 @@
 
 Tuto cours openclassroom [Développez des applications Web avec Angular] (https://openclassrooms.com/fr/courses/4668271-developpez-des-applications-web-avec-angular)
 
+Mis à jour sur la version 7 Angular
+
 Stack 
 
 - Angular 7
@@ -44,7 +46,7 @@ Custom part
 - [ ] update code to angular 7.1
 - [ ] update boostrap to 4.1
 - [ ] add ngx-bootstrap
-
+- [ ] PWA
 
 ## Development server
 

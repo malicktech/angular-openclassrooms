@@ -25,6 +25,8 @@
 
 	ng generate service services/auth-guard
 
+	ng generate component EditAppareil
+
 # Start dev server - localhost:4200
 
     ng serve
