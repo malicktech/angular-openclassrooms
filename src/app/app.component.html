@@ -1,20 +1,24 @@
 <!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+<nav class="navbar navbar-expand-sm fixed-top sticky-top bg-dark navbar-dark justify-content-center">
 
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">CitizenDiop</a>
 
   <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <!-- Links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="auth">Authentification</a></li>
       <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="appareils">Appareils</a></li>
     </ul>
+    <span class="navbar-text">
+      Vous êtes connecté depuis {{ secondes }} secondes !
+    </span>
   </div>
 </nav>
 
